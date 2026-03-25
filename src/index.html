@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Recetas Caseras</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles.scss">
+    <link rel="stylesheet" href="./main.scss">
+  <script type="module" src="./app.js"></script>
+</head>
+
+<body>
+
+  <!-- Cabecera -->
+  <include src="./src/header.html"></include>
+
+  <main>
+
+    <section class="principal">
+
+      <!-- Titulo -->
+      <div class="titulo">
+
+        <h2>Descubre recetas fáciles y deliciosas</h2>
+
+        <p>
+          Cocina platos increíbles con ingredientes sencillos.
+        </p>
+
+      </div>
+
+      <p>Bienvenido a tu nuevo rincón favorito en la cocina. Este es un espacio creado para los amantes de la buena comida, donde cada receta cuenta una historia y 
+        cada plato es una oportunidad para disfrutar, compartir y sorprender. Aquí encontrarás desde recetas sencillas para el día a día hasta propuestas más elaboradas 
+        para ocasiones especiales, siempre explicadas de forma clara y cercana. Creemos que cocinar no tiene por qué ser complicado, sino una experiencia creativa y placentera.</p> 
+        
+      <p>Por eso, nuestro objetivo es inspirarte, ayudarte a descubrir nuevos sabores y acompañarte en cada paso, tanto si estás empezando como si ya tienes experiencia entre 
+        fogones. Prepárate para explorar, experimentar y, sobre todo, disfrutar. Porque la mejor receta siempre es la que se hace con ganas.</p>
+    </section>
+
+    <!-- Recetas destacadas -->
+    <section class="recetas">
+
+      <h2>Recetas destacadas</h2>
+
+      <div class="recetas-slider">
+
+        <button class="slider-btn prev" aria-label="ver receta anterior">
+          <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
+        </button>
+
+        <div class="slider-container">
+
+          <div class="slider-track">
+
+            <article class="card-style receta-card">
+              <img src="imagenes/categoria/poke_atun.jpg" alt="ensalada poke de atun">
+              <h3>Ensalada poke de atún</h3>
+              <p><i class="fa-regular fa-clock" aria-hidden="true"></i> 10 min</p>
+              <a href="./det1.html" class="disponible" aria-label="ver receta de ensalada de col">
+                Ver receta
+              </a>
+            </article>
+
+            <article class="card-style receta-card">
+              <img src="imagenes/categoria/ensalada_col.jpg" alt="ensalada de col">
+              <h3>Ensalada de col</h3>
+              <p><i class="fa-regular fa-clock" aria-hidden="true"></i> 15 min</p>
+              <a href="./det2.html" class="disponible" aria-label="ver receta ensalada de col">
+                Ver receta
+              </a>
+            </article>
+
+            <article class="card-style receta-card">
+              <img src="imagenes/categoria2/ternera_salsa.jpg" alt="ternera en salsa">
+              <h3>Ternera en salsa</h3>
+              <p><i class="fa-regular fa-clock" aria-hidden="true"></i> 10 min</p>
+              <a class="no-disponible" aria-label="reteta de ensalada caprese no disponible">
+                No disponible
+              </a>
+            </article>
+
+
+            <article class="card-style receta-card">
+              <img src="imagenes/categoria3/albondigas_bacalao.jpg" alt="abondigas de bacalao">
+              <h3>Albondigas de bacalao</h3>
+              <p><i class="fa-regular fa-clock" aria-hidden="true"></i> 10 min</p>
+              <a class="no-disponible" aria-label="reteta de ensalada caprese no disponible">
+                No disponible
+              </a>
+            </article>
+
+            <article class="card-style receta-card">
+              <img src="imagenes/categoria4/flan_casero.jpg" alt="flan casero">
+              <h3>Flan casero</h3>
+              <p><i class="fa-regular fa-clock" aria-hidden="true"></i> 10 min</p>
+              <a class="no-disponible" aria-label="reteta de ensalada caprese no disponible">
+                No disponible
+              </a>
+            </article>
+
+          </div>
+
+        </div>
+
+        <button class="slider-btn next" aria-label="ver siguiente receta">
+          <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+        </button>
+
+      </div>
+
+    </section>
+  </main>
+
+  <include src="./src/footer.html"></include>
+
+</body>
+
+</html>

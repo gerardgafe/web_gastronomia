@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Recetas Caseras</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./categoria.scss">
+  <script type="module" src="./categoria.js"></script>
+</head>
+
+<body>
+
+  <!-- Cabecera -->
+  <include src="./src/header.html"></include>
+
+
+  <!-- Seccion -->
+  <section class="recetas">
+
+    <div class="recetas-grid">
+
+      <article class="card-style">
+        <img src="imagenes/categoria/poke_atun.jpg" alt="ensalada poke de atún">
+        <h3>Ensalada poke de atún</h3>
+        <p><i class="fa-regular fa-clock" aria-hidden="true"></i> 10 min</p>
+        <a href="./det1.html" class="disponible" aria-label="ver receta de ensalada de col">
+          Ver receta
+        </a>
+      </article>
+
+      <article class="card-style">
+        <img src="imagenes/categoria/ensalada_col.jpg" alt="ensalada de col">
+        <h3>Ensalada de col</h3>
+        <p><i class="fa-regular fa-clock" aria-hidden="true"></i> 15 min</p>
+        <a href="./det2.html" class="disponible" aria-label="ver receta ensalada de col">
+          Ver receta
+        </a>
+      </article>
+
+      <article class="card-style">
+        <img src="imagenes/categoria/caprese.jpg" alt="ensalada caprese">
+        <h3>Ensalada caprese de pasta</h3>
+        <p><i class="fa-regular fa-clock" aria-hidden="true"></i> 15 min</p>
+        <a class="no-disponible" aria-label="reteta de ensalada caprese no disponible">
+          No disponible
+        </a>
+      </article>
+
+      <article class="card-style">
+        <img src="imagenes/categoria/carbonara.jpg" alt="pasta carbonara">
+        <h3>Pasta carbonara</h3>
+        <p><i class="fa-regular fa-clock" aria-hidden="true"></i> 10 min</p>
+        <a class="no-disponible" aria-label="reteta de pasta carbonara no disponible">
+          No disponible
+        </a>
+      </article>
+
+      <article class="card-style">
+        <img src="imagenes/categoria/raviolis.jpg" alt="raviolis">
+        <h3>Raviolis caseros</h3>
+        <p><i class="fa-regular fa-clock" aria-hidden="true"></i> 45 min</p>
+        <a class="no-disponible" aria-label="reteta de raviolis no disponible">
+          No disponible
+        </a>
+      </article>
+
+    </div>
+
+  </section>
+
+  <!-- Footer -->
+  <include src="./src/footer.html"></include>
+
+</body>
+
+</html>

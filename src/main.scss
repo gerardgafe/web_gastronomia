@@ -1,0 +1,80 @@
+@use "styles" as *;
+
+.principal {
+  max-width: 1500px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.titulo {
+  text-align: center;
+
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+
+  p {
+    color: #666;
+  }
+}
+
+//Slider recetas
+.recetas {
+  padding: 20px 0;
+
+  h2 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .recetas-slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 72%;
+    margin: 0 auto;
+
+    .slider-container {
+      overflow: hidden;
+      width: 75%;
+
+      .slider-track {
+        display: flex;
+        gap: 10px;
+        transition: transform 0.4s ease;
+      }
+    }
+  }
+}
+
+.slider-btn {
+  background: #ff7043;
+  border: none;
+  color: white;
+  padding: 12px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.slider-btn:hover {
+  opacity: 0.8;
+}
+
+//Cars de recetas
+.receta-card {
+  flex: 0 0 250px;
+
+  img {
+    width: 100%;
+    height: 180px;
+  }
+}
+
+//Estilo para el slider cuando se usa en un dispositivo con menor resolucion
+@media (max-width: 600px) {
+  .recetas-slider {
+    width: 100%;
+  }
+}

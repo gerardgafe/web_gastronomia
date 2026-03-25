@@ -1,0 +1,101 @@
+<body>
+    <!DOCTYPE html>
+    <html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Recetas Caseras</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./det.scss">
+        <script type="module" src="./categoria.js"></script>
+    </head>
+
+    <body>
+
+        <!-- Cabecera -->
+        <include src="./src/header.html"></include>
+
+
+        <main class="detalle-receta">
+
+            <!-- Imagen destacada -->
+            <section class="receta-cabecera">
+                <img src="imagenes/categoria/ensalada_col.jpg" alt="Imagen principal de la receta">
+                <h1>Ensalada de col</h1>
+            </section>
+
+            <!-- Contenido principal -->
+            <section class="receta-contenido">
+
+                <h2>Ingredientes</h2>
+                <ul>
+                    <li>1/2 col (repollo) blanca</li>
+                    <li>1 zanahoria</li>
+                    <li>1/2 cebolla (opcional)</li>
+                    <li>3 cucharadas de mayonesa</li>
+                    <li>1 cucharada de vinagre</li>
+                    <li>1 cucharadita de azúcar</li>
+                    <li>Sal al gusto</li>
+                    <li>Pimienta al gusto</li>
+                </ul>
+
+                <h2>Preparación</h2>
+
+                <p>
+                    La ensalada de col es un acompañamiento clásico, fresco y crujiente,
+                    muy popular en barbacoas y platos principales. Su combinación de
+                    verduras y salsa cremosa la hace sencilla y deliciosa.
+                </p>
+
+                <p>
+                    Para prepararla, comienza cortando la col en tiras finas y rallando
+                    la zanahoria. Si lo deseas, añade también cebolla cortada en juliana
+                    para darle un toque más intenso de sabor.
+                </p>
+
+                <p>
+                    En un bol aparte, mezcla la mayonesa, el vinagre, el azúcar, la sal
+                    y la pimienta hasta obtener una salsa homogénea. Incorpora las
+                    verduras y mezcla bien hasta que queden completamente cubiertas.
+                </p>
+
+                <p>
+                    Deja reposar la ensalada en la nevera durante al menos 30 minutos
+                    antes de servir, para que los sabores se integren y la textura sea
+                    aún más agradable.
+                </p>
+
+            </section>
+            <hr>
+            <!-- Imagenes -->
+            <section class="receta-galeria">
+
+                <div class="galeria-grid">
+
+                    <img src="imagenes/detalles/col1.jpg" alt="Imagen de la preparación">
+                    <img src="imagenes/detalles/col2.jpg" alt="Imagen de ingredientes">
+                    <img src="imagenes/detalles/col3.jpg" alt="Imagen del plato final">
+
+                </div>
+
+            </section>
+
+            <!-- Video -->
+            <section class="receta-video">
+
+                <h2>Video de preparación</h2>
+
+                <iframe src="https://www.youtube.com/embed/eXfNcWq_qB0?si=F_5f58RDCEplXsbj" title="YouTube video player"
+                    frameborder="0" title="video de preparacion de ensalada de col"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+            </section>
+
+        </main>
+
+        <!-- Footer -->
+        <include src="./src/footer.html"></include>
+
+    </body>

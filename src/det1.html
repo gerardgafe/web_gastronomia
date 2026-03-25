@@ -1,0 +1,96 @@
+<body>
+    <!DOCTYPE html>
+    <html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Recetas Caseras</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./det.scss">
+        <script type="module" src="./categoria.js"></script>
+    </head>
+
+    <body>
+
+        <!-- Cabecera -->
+        <include src="./src/header.html"></include>
+
+        <main class="detalle-receta">
+
+            <!-- Imagen destacada -->
+            <section class="receta-cabecera">
+                <img src="imagenes/categoria/poke_atun.jpg" alt="Imagen principal de la receta">
+                <h1>Ensalada poke de atún</h1>
+            </section>
+
+            <!-- Contenido principal -->
+            <section class="receta-contenido">
+
+                <h2>Ingredientes</h2>
+                <ul>
+                    <li>200 g de atún fresco (calidad sashimi)</li>
+                    <li>1 taza de arroz</li>
+                    <li>2 cucharadas de salsa de soja</li>
+                    <li>1 cucharadita de aceite de sésamo</li>
+                    <li>1/2 aguacate</li>
+                    <li>1/2 pepino</li>
+                    <li>Zanahoria rallada</li>
+                    <li>Semillas de sésamo</li>
+                    <li>Cebollino (opcional)</li>
+                    <li>Zumo de lima o limón (opcional)</li>
+                </ul>
+
+                <h2>Preparación</h2>
+
+                <p>
+                    El poke de atún es un plato fresco y saludable originario de Hawái,
+                    elaborado con pescado crudo de alta calidad cortado en dados y
+                    acompañado de arroz y otros ingredientes frescos.
+                </p>
+
+                <p>
+                    Para prepararlo, comienza cocinando el arroz y dejándolo enfriar.
+                    Mientras tanto, corta el atún en cubos y mézclalo con salsa de soja,
+                    aceite de sésamo y un toque de zumo de lima o limón si deseas más frescura.
+                </p>
+
+                <p>
+                    Finalmente, monta el poke colocando el arroz como base y añade el atún,
+                    junto con el aguacate, pepino y zanahoria. Termina con semillas de sésamo
+                    y cebollino para darle un toque extra de sabor.
+                </p>
+
+            </section>
+            <!-- Imagenes -->
+            <hr>
+            <section class="receta-galeria">
+
+                <div class="galeria-grid">
+
+                    <img src="imagenes/detalles/poke_atun1.jpg" alt="Imagen de la preparación">
+                    <img src="imagenes/detalles/poke_atun2.jpg" alt="Imagen de ingredientes">
+                    <img src="imagenes/detalles/poke_atun3.jpg" alt="Imagen del plato final">
+
+                </div>
+
+            </section>
+
+            <!-- Video -->
+            <section class="receta-video">
+
+                <h2>Video de preparación</h2>
+
+                <iframe src="https://www.youtube.com/embed/Q93lKYIhX1w?si=5ThPHlhJOwEdzNxD" title="YouTube video player"
+                    frameborder="0" title="video de preparacion de poke de atun"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+            </section>
+
+        </main>
+
+        <!-- Footer -->
+        <include src="./src/footer.html"></include>
+
+    </body>
