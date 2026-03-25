@@ -49,7 +49,7 @@ header {
 
   a {
     text-decoration: none;
-    color: white;
+    color: $background;
     display: flex;
     align-items: center;
     gap: 6px;
@@ -74,7 +74,7 @@ header {
   flex: 0 0 250px;
   padding: 15px;
   text-align: center;
-  background: white;
+  background: $background;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
 
@@ -91,7 +91,7 @@ header {
     text-decoration: none;
     display: inline-block;
     font-family: $text-style;
-    color: white;
+    color: $background;
     font-size: 0.9rem;
     margin-top: 10px;
     padding: 10px 15px;
@@ -109,16 +109,36 @@ header {
 
   .no-disponible {
     background: grey;
-    color: white;
+    color: $background;
     cursor: default;
   }
 
 }
 
+//Scroll
+#scrollBtn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: $primary;
+  color: $background;
+  border: none;
+  padding: 12px 16px;
+  border-radius: 50%;
+  font-size: 20px;
+  cursor: pointer;
+  display: none;
+  z-index: 1000;
+}
+
+#scrollBtn:hover {
+  opacity: 0.9;
+}
+
 //Footer
 footer {
   background: $secondary;
-  color: white;
+  color: $background;
   text-align: center;
   padding: 20px;
   margin-top: auto;
