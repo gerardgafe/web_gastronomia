@@ -7,20 +7,22 @@
         <title>Recetas Caseras</title>
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./det.scss">
-        <script type="module" src="./categoria.js"></script>
+        <link rel="stylesheet" href="../styles.scss">
+        <link rel="stylesheet" href="../det.scss">
+        <script type="module" src="../categoria.js"></script>
+        <script type="module" src="../common.js"></script>
     </head>
 
     <body>
 
         <!-- Cabecera -->
-        <include src="./src/header.html"></include>
+        <include src="./src/componentes/header.html"></include>
 
         <main class="detalle-receta">
 
             <!-- Imagen destacada -->
             <section class="receta-cabecera">
-                <img src="imagenes/categoria/poke_atun.jpg" alt="Imagen principal de la receta">
+                <img src="../imagenes/categoria/poke_atun.jpg" alt="Imagen principal de la receta">
                 <h1>Ensalada poke de atún</h1>
             </section>
 
@@ -68,9 +70,9 @@
 
                 <div class="galeria-grid">
 
-                    <img src="imagenes/detalles/poke_atun1.jpg" alt="Imagen de la preparación">
-                    <img src="imagenes/detalles/poke_atun2.jpg" alt="Imagen de ingredientes">
-                    <img src="imagenes/detalles/poke_atun3.jpg" alt="Imagen del plato final">
+                    <img src="../imagenes/detalles/poke_atun1.jpg" alt="Imagen de la preparación">
+                    <img src="../imagenes/detalles/poke_atun2.jpg" alt="Imagen de ingredientes">
+                    <img src="../imagenes/detalles/poke_atun3.jpg" alt="Imagen del plato final">
 
                 </div>
 
@@ -88,9 +90,12 @@
 
             </section>
 
+            <!-- Scroll -->
+            <include src="./src/componentes/button_scroll.html"></include>
+
         </main>
 
         <!-- Footer -->
-        <include src="./src/footer.html"></include>
+        <include src="./src/componentes/footer.html"></include>
 
     </body>

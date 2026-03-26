@@ -1,7 +1,3 @@
-import "@fortawesome/fontawesome-free/css/all.css";
-import "./styles.scss";
-
-
 const track = document.querySelector(".slider-track");
 const nextBtn = document.querySelector(".next");
 const prevBtn = document.querySelector(".prev");
@@ -23,6 +19,7 @@ function getMaxPosition() {
   return -(cards.length - visibleCards) * getCardWidth();
 }
 
+//Accion al hacer clik para pasar las cards -
 nextBtn.addEventListener("click", () => {
 
   const maxPosition = getMaxPosition();
@@ -34,6 +31,7 @@ nextBtn.addEventListener("click", () => {
 
 });
 
+//Accion al hacer clik para pasar las cards +
 prevBtn.addEventListener("click", () => {
 
   if (position < 0) {
