@@ -6,9 +6,9 @@
   <title>Recetas Caseras</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="categoria.scss">
-  <script type="module" src="categoria.js"></script>
-  <script type="module" src="common.js"></script>
+  <link rel="stylesheet" href="./styles/categoria.scss">
+  <script type="module" src="./scripts/categoria.js"></script>
+  <script type="module" src="./scripts/common.js"></script>
 </head>
 
 <body>
@@ -16,62 +16,66 @@
   <!-- Cabecera -->
   <include src="./src/componentes/header.html"></include>
 
-  <!-- Seccion -->
-  <section class="recetas">
+  <main>
 
-    <div class="recetas-grid">
+    <!-- Seccion -->
+    <section class="recetas">
 
-      <article class="card-style">
-        <img src="imagenes/categoria4/flan_casero.jpg">
-        <h3>Flan casero</h3>
-        <p><i class="fa-regular fa-clock" aria-hidden="true"></i> 10 min</p>
-        <a class="no-disponible" aria-label="reteta de flan no disponible">
-          No disponible
-        </a>
-      </article>
+      <div class="recetas-grid">
 
-      <article class="card-style">
-        <img src="imagenes/categoria4/tarta_queso.jpg">
-        <h3>Tarta de queso</h3>
-        <p><i class="fa-regular fa-clock" aria-hidden="true"></i> 15 min</p>
-        <a class="no-disponible" aria-label="reteta de tarta de queso no disponible">
-          No disponible
-        </a>
-      </article>
+        <article class="card-style">
+          <img src="imagenes/categoria4/flan_casero.jpg">
+          <h3>Flan casero</h3>
+          <p><i class="fa-regular fa-clock" aria-hidden="true"></i> 10 min</p>
+          <a class="no-disponible" aria-label="reteta de flan no disponible">
+            No disponible
+          </a>
+        </article>
 
-      <article class="card-style">
-        <img src="imagenes/categoria4/profiteroles.jpg">
-        <h3>Profiteroles</h3>
-        <p><i class="fa-regular fa-clock" aria-hidden="true"></i> 15 min</p>
-        <a class="no-disponible" aria-label="reteta de profiteroles no disponible">
-          No disponible
-        </a>
-      </article>
+        <article class="card-style">
+          <img src="imagenes/categoria4/tarta_queso.jpg">
+          <h3>Tarta de queso</h3>
+          <p><i class="fa-regular fa-clock" aria-hidden="true"></i> 15 min</p>
+          <a class="no-disponible" aria-label="reteta de tarta de queso no disponible">
+            No disponible
+          </a>
+        </article>
 
-      <article class="card-style">
-        <img src="imagenes/categoria4/natillas.jpg">
-        <h3>Natillas</h3>
-        <p><i class="fa-regular fa-clock" aria-hidden="true"></i> 10 min</p>
-        <a class="no-disponible" aria-label="reteta de natillas no disponible">
-          No disponible
-        </a>
-      </article>
+        <article class="card-style">
+          <img src="imagenes/categoria4/profiteroles.jpg">
+          <h3>Profiteroles</h3>
+          <p><i class="fa-regular fa-clock" aria-hidden="true"></i> 15 min</p>
+          <a class="no-disponible" aria-label="reteta de profiteroles no disponible">
+            No disponible
+          </a>
+        </article>
 
-      <article class="card-style">
-        <img src="imagenes/categoria4/brownie.jpg">
-        <h3>Brownie</h3>
-        <p><i class="fa-regular fa-clock" aria-hidden="true"></i> 45 min</p>
-        <a class="no-disponible" aria-label="reteta de brownie no disponible">
-          No disponible
-        </a>
-      </article>
+        <article class="card-style">
+          <img src="imagenes/categoria4/natillas.jpg">
+          <h3>Natillas</h3>
+          <p><i class="fa-regular fa-clock" aria-hidden="true"></i> 10 min</p>
+          <a class="no-disponible" aria-label="reteta de natillas no disponible">
+            No disponible
+          </a>
+        </article>
 
-    </div>
+        <article class="card-style">
+          <img src="imagenes/categoria4/brownie.jpg">
+          <h3>Brownie</h3>
+          <p><i class="fa-regular fa-clock" aria-hidden="true"></i> 45 min</p>
+          <a class="no-disponible" aria-label="reteta de brownie no disponible">
+            No disponible
+          </a>
+        </article>
 
-  </section>
+      </div>
 
-  <!-- Scroll -->
-  <include src="./src/componentes/button_scroll.html"></include>
+    </section>
+
+    <!-- Boton scroll -->
+    <include src="./src/componentes/button_scroll.html"></include>
+
+  </main>
 
   <!-- Footer -->
   <include src="./src/componentes/footer.html"></include>
