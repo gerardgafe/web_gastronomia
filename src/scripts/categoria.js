@@ -1,5 +1,5 @@
 import "@fortawesome/fontawesome-free/css/all.css";
-import "./styles.scss";
+import "../styles/styles.scss";
 
 //Menu
 document.addEventListener("DOMContentLoaded", () => {
