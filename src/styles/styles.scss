@@ -1,6 +1,7 @@
-$primary: #e85c30;
+$primary: #ff9800;
 $secondary: #333;
-$background: #fafafa;
+$secondary-menu: #F5CF27;
+$background: #ffffff;
 $text-style: Arial, sans-serif;
 
 body {
@@ -59,14 +60,14 @@ header {
   }
 
   a:hover {
-    color: $primary;
+    color: $secondary-menu;
     background: rgba(255,255,255,0.08);
   }
 
 }
 
 .main-menu a.active {
-  color: $primary;
+  color: $secondary-menu;
 }
 
 //Estilo para todas las cards
@@ -91,12 +92,11 @@ header {
     text-decoration: none;
     display: inline-block;
     font-family: $text-style;
-    color: $background;
     font-size: 0.9rem;
     margin-top: 10px;
     padding: 10px 15px;
-    border: none;
     border-radius: 5px;
+    color: #000000;
   }
 
   .disponible {
@@ -108,8 +108,8 @@ header {
   }
 
   .no-disponible {
-    background: grey;
-    color: $background;
+    background: #cccccc;
+    color: #333333;
     cursor: default;
   }
 
