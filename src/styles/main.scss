@@ -62,19 +62,56 @@
   opacity: 0.8;
 }
 
-//Cars de recetas
+//Cards de recetas
 .receta-card {
   flex: 0 0 250px;
 
   img {
     width: 100%;
-    height: 180px;
+      height: 180px;
+      object-fit: cover;
+    
+      object-fit: cover;
+      
+      //Clip-path
+      clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+    }
   }
-}
 
 //Estilo para el slider cuando se usa en un dispositivo con menor resolucion
 @media (max-width: 600px) {
   .recetas-slider {
     width: 100%;
   }
+}
+//SVG
+.svg {
+  display: grid;
+  place-items: center;
+
+  svg {
+    width: 220px;
+    height: 220px;
+
+    .vela {
+      transform-origin: center;
+      animation: accionVela 0.6s infinite alternate;
+    }
+
+    @keyframes accionVela {
+      0% {
+        transform: scale(1) rotate(0deg);
+        fill: #ff9800;
+      }
+
+      100% {
+        transform: scale(1.2) rotate(3deg);
+        fill: #ffc107;
+      }
+    }
+  }
+}
+
+.svg svg:hover {
+transform: scale(1.1);
 }
