@@ -9,8 +9,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./styles/styles.scss">
         <link rel="stylesheet" href="./styles/det.scss">
-        <script type="module" src="./scripts/categoria.js"></script>
-        <script type="module" src="./scripts/common.js"></script>
+        <script async type="module" src="./scripts/categoria.js"></script>
+        <script defer type="module" src="./scripts/common.js"></script>
     </head>
 
     <body>
@@ -83,17 +83,17 @@
                     <picture>
                         <source srcset="imagenes/detalles/col1-mobile.jpg" media="(max-width: 600px)">
                     
-                        <img src="imagenes/detalles/col1.jpg" alt="Imagen del plato final">
+                        <img loading="lazy" src="imagenes/detalles/col1.jpg" alt="Imagen del plato final">
                     </picture>
                     <picture>
                         <source srcset="imagenes/detalles/col2-mobile.jpg" media="(max-width: 600px)">
                     
-                        <img src="imagenes/detalles/col2.jpg" alt="Imagen del plato final">
+                        <img loading="lazy" src="imagenes/detalles/col2.jpg" alt="Imagen del plato final">
                     </picture>
                     <picture>
                         <source srcset="imagenes/detalles/col3-mobile.jpg" media="(max-width: 600px)">
                     
-                        <img src="imagenes/detalles/col3.jpg" alt="Imagen del plato final">
+                        <img loading="lazy" src="imagenes/detalles/col3.jpg" alt="Imagen del plato final">
                     </picture>
 
                 </div>
@@ -105,7 +105,7 @@
 
                 <h2>Video de preparación</h2>
 
-                <iframe src="https://www.youtube.com/embed/eXfNcWq_qB0?si=F_5f58RDCEplXsbj" title="YouTube video player"
+                <iframe src="https://www.youtube.com/embed/eXfNcWq_qB0?si=F_5f58RDCEplXsbj" loading="lazy" title="YouTube video player"
                     frameborder="0" title="video de preparacion de ensalada de col"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

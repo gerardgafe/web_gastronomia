@@ -14,8 +14,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   links.forEach(link => {
     const linkPage = link.getAttribute("href").split("/")[1];
-    console.log(linkPage)
-    console.log(currentPage)
     if (linkPage === currentPage) {
       link.classList.add("active");
     }
