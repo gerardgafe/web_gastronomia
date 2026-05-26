@@ -9,8 +9,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./styles/styles.scss">
         <link rel="stylesheet" href="./styles/det.scss">
-        <script type="module" src="./scripts/categoria.js"></script>
-        <script type="module" src="./scripts/common.js"></script>
+        <script async type="module" src="./scripts/categoria.js"></script>
+        <script defer type="module" src="./scripts/common.js"></script>
     </head>
 
     <body>
@@ -78,17 +78,17 @@
                     <picture>
                         <source srcset="imagenes/detalles/poke_atun1-mobile.jpg" media="(max-width: 600px)">
 
-                        <img src="imagenes/detalles/poke_atun1.jpg" alt="Imagen del plato final">
+                        <img loading="lazy" src="imagenes/detalles/poke_atun1.jpg" alt="Imagen del plato final">
                     </picture>
                     <picture>
-                        <source srcset="imagenes/detalles/poke_atun2-mobile.jpg" media="(max-width: 600px)">
+                        <source loading="lazy" srcset="imagenes/detalles/poke_atun2-mobile.jpg" media="(max-width: 600px)">
 
-                        <img src="imagenes/detalles/poke_atun2.jpg" alt="Imagen del plato final">
+                        <img loading="lazy" src="imagenes/detalles/poke_atun2.jpg" alt="Imagen del plato final">
                     </picture>
                     <picture>
                         <source srcset="imagenes/detalles/poke_atun3-mobile.jpg" media="(max-width: 600px)">
 
-                        <img src="imagenes/detalles/poke_atun3.jpg" alt="Imagen del plato final">
+                        <img loading="lazy" src="imagenes/detalles/poke_atun3.jpg" alt="Imagen del plato final">
                     </picture>
                     
                 </div>
@@ -100,7 +100,7 @@
 
                 <h2>Video de preparación</h2>
 
-                <iframe src="https://www.youtube.com/embed/Q93lKYIhX1w?si=5ThPHlhJOwEdzNxD" title="YouTube video player"
+                <iframe src="https://www.youtube.com/embed/Q93lKYIhX1w?si=5ThPHlhJOwEdzNxD" loading="lazy" title="YouTube video player"
                     frameborder="0" title="video de preparacion de poke de atun"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
