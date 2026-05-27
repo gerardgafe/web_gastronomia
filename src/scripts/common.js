@@ -1,5 +1,4 @@
 import "@fortawesome/fontawesome-free/css/all.css";
-import "../styles/styles.scss";
 
 const btn = document.getElementById("scrollBtn");
 
