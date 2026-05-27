@@ -1,121 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Recetas Caseras</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/node_modules/@fortawesome/fontawesome-free/css/all.css" />
+    <link rel="stylesheet" href="./styles/styles.scss">
+    <link rel="stylesheet" href="./styles/det.scss">
+    <script defer type="module" src="./scripts/categoria.js"></script>
+    <script defer type="module" src="./scripts/videos.js"></script>
+    <script defer type="module" src="./scripts/common.js"></script>
+</head>
+
 <body>
-    <!DOCTYPE html>
-    <html lang="es">
 
-    <head>
-        <meta charset="UTF-8">
-        <title>Recetas Caseras</title>
-
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="/node_modules/@fortawesome/fontawesome-free/css/all.css"/>
-        <link rel="stylesheet" href="./styles/styles.scss">
-        <link rel="stylesheet" href="./styles/det.scss">
-        <script defer type="module" src="./scripts/categoria.js"></script>
-        <script defer type="module" src="./scripts/videos.js"></script>
-        <script defer type="module" src="./scripts/common.js"></script>
-    </head>
-
-    <body>
-
-        <!-- Cabecera -->
-        <include src="./src/componentes/header.html"></include>
+    <!-- Cabecera -->
+    <include src="./src/componentes/header.html"></include>
 
 
-        <main class="detalle-receta">
+    <main class="detalle-receta">
 
-            <!-- Imagen destacada -->
-            <section class="receta-cabecera">
+        <!-- Imagen destacada -->
+        <section class="receta-cabecera">
+            <picture>
+                <source srcset="imagenes/detalles/ensalada_col-mobile.jpg" media="(max-width: 600px)">
+
+                <img fetchpriority=high src="imagenes/detalles/ensalada_col.jpg" alt="Imagen principal de la receta">
+            </picture>
+
+            <h1>Ensalada poke de atún</h1>
+        </section>
+
+        <!-- Contenido principal -->
+        <section class="receta-contenido">
+
+            <h2>Ingredientes</h2>
+            <ul>
+                <li>1/2 col (repollo) blanca</li>
+                <li>1 zanahoria</li>
+                <li>1/2 cebolla (opcional)</li>
+                <li>3 cucharadas de mayonesa</li>
+                <li>1 cucharada de vinagre</li>
+                <li>1 cucharadita de azúcar</li>
+                <li>Sal al gusto</li>
+                <li>Pimienta al gusto</li>
+            </ul>
+
+            <h2>Preparación</h2>
+
+            <p>
+                La ensalada de col es un acompañamiento clásico, fresco y crujiente,
+                muy popular en barbacoas y platos principales. Su combinación de
+                verduras y salsa cremosa la hace sencilla y deliciosa.
+            </p>
+
+            <p>
+                Para prepararla, comienza cortando la col en tiras finas y rallando
+                la zanahoria. Si lo deseas, añade también cebolla cortada en juliana
+                para darle un toque más intenso de sabor.
+            </p>
+
+            <p>
+                En un bol aparte, mezcla la mayonesa, el vinagre, el azúcar, la sal
+                y la pimienta hasta obtener una salsa homogénea. Incorpora las
+                verduras y mezcla bien hasta que queden completamente cubiertas.
+            </p>
+
+            <p>
+                Deja reposar la ensalada en la nevera durante al menos 30 minutos
+                antes de servir, para que los sabores se integren y la textura sea
+                aún más agradable.
+            </p>
+
+        </section>
+        <hr>
+        <!-- Imagenes -->
+        <section class="receta-galeria">
+
+            <div class="galeria-grid">
+
                 <picture>
-                    <source srcset="imagenes/detalles/ensalada_col-mobile.jpg" media="(max-width: 600px)">
-            
-                   <img fetchpriority=high src="imagenes/detalles/ensalada_col.jpg" alt="Imagen principal de la receta">
+                    <source srcset="imagenes/detalles/col1.jpg?as=webp" type="image/webp"/>
+
+                    <img loading="lazy" src="imagenes/detalles/col1.jpg" width="600" height="400"
+                        alt="Imagen del plato final">
                 </picture>
-            
-                <h1>Ensalada poke de atún</h1>
-            </section>
+                <picture>
+                    <source srcset="imagenes/detalles/col2.jpg?as=webp" type="image/webp"/>
 
-            <!-- Contenido principal -->
-            <section class="receta-contenido">
+                    <img loading="lazy" src="imagenes/detalles/col2.jpg" width="600" height="400"
+                        alt="Imagen del plato final">
+                </picture>
+                <picture>
+                    <source srcset="imagenes/detalles/col3.jpg?as=webp" type="image/webp"/>
 
-                <h2>Ingredientes</h2>
-                <ul>
-                    <li>1/2 col (repollo) blanca</li>
-                    <li>1 zanahoria</li>
-                    <li>1/2 cebolla (opcional)</li>
-                    <li>3 cucharadas de mayonesa</li>
-                    <li>1 cucharada de vinagre</li>
-                    <li>1 cucharadita de azúcar</li>
-                    <li>Sal al gusto</li>
-                    <li>Pimienta al gusto</li>
-                </ul>
+                    <img loading="lazy" src="imagenes/detalles/col3.jpg" width="600" height="400"
+                        alt="Imagen del plato final">
+                </picture>
 
-                <h2>Preparación</h2>
+            </div>
 
-                <p>
-                    La ensalada de col es un acompañamiento clásico, fresco y crujiente,
-                    muy popular en barbacoas y platos principales. Su combinación de
-                    verduras y salsa cremosa la hace sencilla y deliciosa.
-                </p>
+        </section>
 
-                <p>
-                    Para prepararla, comienza cortando la col en tiras finas y rallando
-                    la zanahoria. Si lo deseas, añade también cebolla cortada en juliana
-                    para darle un toque más intenso de sabor.
-                </p>
+        <!-- Video -->
+        <section class="receta-video">
 
-                <p>
-                    En un bol aparte, mezcla la mayonesa, el vinagre, el azúcar, la sal
-                    y la pimienta hasta obtener una salsa homogénea. Incorpora las
-                    verduras y mezcla bien hasta que queden completamente cubiertas.
-                </p>
+            <h2>Video de preparación</h2>
+            <div class="youtube" data-video="eXfNcWq_qB0"></div>
 
-                <p>
-                    Deja reposar la ensalada en la nevera durante al menos 30 minutos
-                    antes de servir, para que los sabores se integren y la textura sea
-                    aún más agradable.
-                </p>
+        </section>
 
-            </section>
-            <hr>
-            <!-- Imagenes -->
-            <section class="receta-galeria">
+        <!-- Boton scroll -->
+        <include src="./src/componentes/button_scroll.html"></include>
 
-                <div class="galeria-grid">
+    </main>
 
-                    <picture>
-                        <source srcset="imagenes/detalles/col1-mobile.jpg" media="(max-width: 600px)">
-                    
-                        <img loading="lazy" src="imagenes/detalles/col1.jpg" alt="Imagen del plato final">
-                    </picture>
-                    <picture>
-                        <source srcset="imagenes/detalles/col2-mobile.jpg" media="(max-width: 600px)">
-                    
-                        <img loading="lazy" src="imagenes/detalles/col2.jpg" alt="Imagen del plato final">
-                    </picture>
-                    <picture>
-                        <source srcset="imagenes/detalles/col3-mobile.jpg" media="(max-width: 600px)">
-                    
-                        <img loading="lazy" src="imagenes/detalles/col3.jpg" alt="Imagen del plato final">
-                    </picture>
+    <!-- Footer -->
+    <include src="./src/componentes/footer.html"></include>
 
-                </div>
-
-            </section>
-
-            <!-- Video -->
-            <section class="receta-video">
-
-                <h2>Video de preparación</h2>
-                <div class="youtube" data-video="eXfNcWq_qB0"></div>
-
-            </section>
-
-            <!-- Boton scroll -->
-            <include src="./src/componentes/button_scroll.html"></include>
-
-        </main>
-
-        <!-- Footer -->
-        <include src="./src/componentes/footer.html"></include>
-
-    </body>
+</body>

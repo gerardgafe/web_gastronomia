@@ -1,116 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Recetas Caseras</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/node_modules/@fortawesome/fontawesome-free/css/all.css" />
+    <link rel="stylesheet" href="./styles/styles.scss">
+    <link rel="stylesheet" href="./styles/det.scss">
+    <script defer type="module" src="./scripts/categoria.js"></script>
+    <script defer type="module" src="./scripts/videos.js"></script>
+    <script defer type="module" src="./scripts/common.js"></script>
+</head>
+
 <body>
-    <!DOCTYPE html>
-    <html lang="es">
 
-    <head>
-        <meta charset="UTF-8">
-        <title>Recetas Caseras</title>
+    <!-- Cabecera -->
+    <include src="./src/componentes/header.html"></include>
 
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="/node_modules/@fortawesome/fontawesome-free/css/all.css"/>
-        <link rel="stylesheet" href="./styles/styles.scss">
-        <link rel="stylesheet" href="./styles/det.scss">
-        <script defer type="module" src="./scripts/categoria.js"></script>
-        <script defer type="module" src="./scripts/videos.js"></script>
-        <script defer type="module" src="./scripts/common.js"></script>
-    </head>
+    <main class="detalle-receta">
 
-    <body>
+        <!-- Imagen destacada -->
 
-        <!-- Cabecera -->
-        <include src="./src/componentes/header.html"></include>
+        <section class="receta-cabecera">
+            <picture>
+                <source srcset="imagenes/detalles/poke_atun-mobile.jpg" media="(max-width: 600px)">
 
-        <main class="detalle-receta">
+                <img fetchpriority=high src="imagenes/detalles/poke_atun.jpg" alt="Imagen principal de la receta">
+            </picture>
 
-            <!-- Imagen destacada -->
+            <h1>Ensalada poke de atún</h1>
+        </section>
 
-            <section class="receta-cabecera">
+        <!-- Contenido principal -->
+        <section class="receta-contenido">
+
+            <h2>Ingredientes</h2>
+            <ul>
+                <li>200 g de atún fresco (calidad sashimi)</li>
+                <li>1 taza de arroz</li>
+                <li>2 cucharadas de salsa de soja</li>
+                <li>1 cucharadita de aceite de sésamo</li>
+                <li>1/2 aguacate</li>
+                <li>1/2 pepino</li>
+                <li>Zanahoria rallada</li>
+                <li>Semillas de sésamo</li>
+                <li>Cebollino (opcional)</li>
+                <li>Zumo de lima o limón (opcional)</li>
+            </ul>
+
+            <h2>Preparación</h2>
+
+            <p>
+                El poke de atún es un plato fresco y saludable originario de Hawái,
+                elaborado con pescado crudo de alta calidad cortado en dados y
+                acompañado de arroz y otros ingredientes frescos.
+            </p>
+
+            <p>
+                Para prepararlo, comienza cocinando el arroz y dejándolo enfriar.
+                Mientras tanto, corta el atún en cubos y mézclalo con salsa de soja,
+                aceite de sésamo y un toque de zumo de lima o limón si deseas más frescura.
+            </p>
+
+            <p>
+                Finalmente, monta el poke colocando el arroz como base y añade el atún,
+                junto con el aguacate, pepino y zanahoria. Termina con semillas de sésamo
+                y cebollino para darle un toque extra de sabor.
+            </p>
+
+        </section>
+        <!-- Imagenes -->
+        <hr>
+        <section class="receta-galeria">
+
+            <div class="galeria-grid">
                 <picture>
-                    <source srcset="imagenes/detalles/poke_atun-mobile.jpg" media="(max-width: 600px)">
+                    <source srcset="imagenes/detalles/poke_atun1.jpg?as=webp" type="image/webp"/>
 
-                    <img fetchpriority=high src="imagenes/detalles/poke_atun.jpg" alt="Imagen principal de la receta">
+                    <img loading="lazy" src="imagenes/detalles/poke_atun1.jpg" width="600" height="400"
+                        alt="Imagen del plato final">
+                </picture>
+                <picture>
+                    <source srcset="imagenes/detalles/poke_atun2.jpg?as=webp" type="image/webp"/>
+
+                    <img loading="lazy" src="imagenes/detalles/poke_atun2.jpg" width="600" height="400"
+                        alt="Imagen del plato final">
+                </picture>
+                <picture>
+                    <source srcset="imagenes/detalles/poke_atun3.jpg?as=webp" type="image/webp"/>
+
+                    <img loading="lazy" src="imagenes/detalles/poke_atun3.jpg" width="600" height="400"
+                        alt="Imagen del plato final">
                 </picture>
 
-                <h1>Ensalada poke de atún</h1>
-            </section>
+            </div>
 
-            <!-- Contenido principal -->
-            <section class="receta-contenido">
+        </section>
 
-                <h2>Ingredientes</h2>
-                <ul>
-                    <li>200 g de atún fresco (calidad sashimi)</li>
-                    <li>1 taza de arroz</li>
-                    <li>2 cucharadas de salsa de soja</li>
-                    <li>1 cucharadita de aceite de sésamo</li>
-                    <li>1/2 aguacate</li>
-                    <li>1/2 pepino</li>
-                    <li>Zanahoria rallada</li>
-                    <li>Semillas de sésamo</li>
-                    <li>Cebollino (opcional)</li>
-                    <li>Zumo de lima o limón (opcional)</li>
-                </ul>
+        <!-- Video -->
+        <section class="receta-video">
 
-                <h2>Preparación</h2>
+            <h2>Video de preparación</h2>
+            <div class="youtube" data-video="Q93lKYIhX1w"></div>
 
-                <p>
-                    El poke de atún es un plato fresco y saludable originario de Hawái,
-                    elaborado con pescado crudo de alta calidad cortado en dados y
-                    acompañado de arroz y otros ingredientes frescos.
-                </p>
+        </section>
 
-                <p>
-                    Para prepararlo, comienza cocinando el arroz y dejándolo enfriar.
-                    Mientras tanto, corta el atún en cubos y mézclalo con salsa de soja,
-                    aceite de sésamo y un toque de zumo de lima o limón si deseas más frescura.
-                </p>
+        <!-- Boton scroll -->
+        <include src="./src/componentes/button_scroll.html"></include>
 
-                <p>
-                    Finalmente, monta el poke colocando el arroz como base y añade el atún,
-                    junto con el aguacate, pepino y zanahoria. Termina con semillas de sésamo
-                    y cebollino para darle un toque extra de sabor.
-                </p>
+    </main>
 
-            </section>
-            <!-- Imagenes -->
-            <hr>
-            <section class="receta-galeria">
+    <!-- Footer -->
+    <include src="./src/componentes/footer.html"></include>
 
-                <div class="galeria-grid">
-                    <picture>
-                        <source srcset="imagenes/detalles/poke_atun1-mobile.jpg" media="(max-width: 600px)">
-
-                        <img loading="lazy" src="imagenes/detalles/poke_atun1.jpg" alt="Imagen del plato final">
-                    </picture>
-                    <picture>
-                        <source srcset="imagenes/detalles/poke_atun2-mobile.jpg" media="(max-width: 600px)">
-
-                        <img loading="lazy" src="imagenes/detalles/poke_atun2.jpg" alt="Imagen del plato final">
-                    </picture>
-                    <picture>
-                        <source srcset="imagenes/detalles/poke_atun3-mobile.jpg" media="(max-width: 600px)">
-
-                        <img loading="lazy" src="imagenes/detalles/poke_atun3.jpg" alt="Imagen del plato final">
-                    </picture>
-                    
-                </div>
-
-            </section>
-
-            <!-- Video -->
-            <section class="receta-video">
-
-                <h2>Video de preparación</h2>
-                <div class="youtube" data-video="Q93lKYIhX1w"></div>
-
-            </section>
-
-            <!-- Boton scroll -->
-            <include src="./src/componentes/button_scroll.html"></include>
-
-        </main>
-
-        <!-- Footer -->
-        <include src="./src/componentes/footer.html"></include>
-
-    </body>
+</body>
