@@ -1,5 +1,3 @@
-import "@fortawesome/fontawesome-free/css/all.css";
-
 const btn = document.getElementById("scrollBtn");
 
 window.addEventListener("scroll", () => {
