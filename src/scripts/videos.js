@@ -4,6 +4,7 @@ function initYoutubeEmbeds() {
 
     // miniatura
     el.innerHTML = `
+      <source srcset="https://img.youtube.com/vi/${id}/hqdefault.jpg?as=webp" type="image/webp"/>
       <img src="https://img.youtube.com/vi/${id}/hqdefault.jpg" alt="video">
       <div class="play">▶</div>`;
 
