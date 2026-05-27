@@ -56,10 +56,10 @@
   padding: 12px;
   cursor: pointer;
   border-radius: 50%;
-}
 
-.slider-btn:hover {
-  opacity: 0.8;
+  &:hover {
+    opacity: 0.8;
+  }
 }
 
 //Cards de recetas
@@ -68,15 +68,13 @@
 
   img {
     width: 100%;
-      height: 180px;
-      object-fit: cover;
-    
-      object-fit: cover;
-      
-      //Clip-path
-      clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
-    }
+    height: 180px;
+    object-fit: cover;
+
+    //Clip-path
+    clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
   }
+}
 
 //Estilo para el slider cuando se usa en un dispositivo con menor resolucion
 @media (max-width: 600px) {
@@ -84,6 +82,7 @@
     width: 100%;
   }
 }
+
 //SVG
 .svg {
   display: grid;
@@ -99,19 +98,19 @@
     }
 
     @keyframes accionVela {
-      0% {
+      from {
         transform: scale(1) rotate(0deg);
         fill: #ff9800;
       }
 
-      100% {
+      to {
         transform: scale(1.2) rotate(3deg);
         fill: #ffc107;
       }
     }
-  }
-}
 
-.svg svg:hover {
-transform: scale(1.1);
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
 }
